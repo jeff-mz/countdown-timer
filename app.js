@@ -1,6 +1,5 @@
 "use strict ";
 document.addEventListener("DOMContentLoaded", function () {
-  // Set the initial countdown duration in seconds (8 days, 23 hours, 55 minutes, 41 seconds)
   const initialDuration = 8 * 24 * 60 * 60 + 23 * 60 * 60 + 55 * 60 + 41; // in seconds
 
   let timeRemaining = initialDuration;
@@ -37,9 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
     timeRemaining--;
   }
 
-  // Initial call to set the countdown immediately upon loading
   updateCountdown();
 
-  // Update the countdown every second
   const countdownInterval = setInterval(updateCountdown, 1000);
 });
